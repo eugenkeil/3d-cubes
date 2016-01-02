@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>3d-cubes</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="scripts.js"></script>
+<script src="plot.js"></script>
+
+</head>
+
+<body>
+  <p> Use the mouse to rotate (hold down and drag) and the buttons below to add more cubes.</p>
+ <canvas id="medium" onmousedown="doSomeThing(event);change=true;" 
+ onmouseup="change=false;" 
+ onmousemove="doSomeThing(event)" width="500" height ="500">Your browser does not support the canvas element.</canvas>
+<br>
+<button type="button" onclick="moveLeft();"> move left</button> 
+<button type="button" onclick="moveRight();"> move right</button> 
+<button type="button" onclick="moveUp();"> move up</button> 
+<button type="button" onclick="moveDown();"> move down</button> 
+<button type="button" onclick="moveIn();"> move in</button> 
+<button type="button" onclick="moveOut();"> move out</button> 
+<button type="button" onclick="setCube();"> put Cube</button> 
+  <p id="ausgabe"> One can also use the keys a,d,w,s,r,f and 'enter' to activate these buttons.</p>
+ <input id="farbe" type='text' value="hsl(200,100%,50%)">
+ </body>
+
+</html>
